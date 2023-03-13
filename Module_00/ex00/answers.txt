@@ -1,0 +1,11 @@
+conda list
+
+pip3 show numpy
+
+conda uninstall numpy
+
+conda install numpy
+
+pip3 freeze > requirements.txt
+
+
