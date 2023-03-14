@@ -20,5 +20,8 @@ def text_analyzer(cadena = None):
         print("-", i, " son signos de puntuación\n") 
          
 if __name__ == "__main__":
-        cadena = sys.argv[1]
+        if len(sys.argv) < 2:
+             cadena = None
+        else:
+             cadena = sys.argv[1]
         text_analyzer(cadena)
