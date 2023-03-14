@@ -2,10 +2,10 @@ import sys
 
 if len(sys.argv) > 1:
     
-    number = sys.argv[1];
+    number = sys.argv[1]
 
     if number[0] == "-":
-        number.lstrip("-")
+        number=number[1:]
     if len(sys.argv) == 2 and number.isdigit():
         if int(number) == 0:
             print("Es un cero")
